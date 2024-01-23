@@ -1,0 +1,180 @@
+.pizza {
+
+    height: 500px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(82, 7, 7);
+
+    color : white;
+}
+
+.MaPizza h1{
+    text-align: center;
+    font-family: helsinki;
+}
+
+.carrou {
+    width: 1202px;
+    display: grid;
+    grid-template-rows: 1fr;
+    overflow-x: auto; 
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.unepizza {
+
+    width: 1200px;
+    height: 420px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.arrowleft img, .arrowright img {
+    width: 150px;
+    filter: invert(1);
+}
+
+.pizza .arrowleft img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.pizzaleft h2 {
+    margin-top: -50px;
+    transform: rotate(-10deg);
+
+    background-color: #181818;
+    border-radius: 10px;
+    padding: 5px;
+
+    font-size: 40px;
+    font-family: helsinki;
+}
+
+.pizza .pizzaleft img{
+    width: 350px;
+}
+
+.pizzaright h1{
+    margin-bottom: 20px;
+    font-family: helsinki;
+    font-size: 60px;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+.pizzaright p {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: KGWhattheTeacherWants;
+}
+
+.pizzaright li {
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pizzaright ul {
+    margin-bottom: 20px;
+}
+
+.pizzaright button {
+    appearance: none;
+    background-color: #181818;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 15px;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 300px;
+    will-change: transform;
+  }
+  
+.pizzaright button:disabled {
+    pointer-events: none;
+}
+  
+.pizzaright button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.pizzaright button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.pizzaright a {
+    color : white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.pizzaright .addPanierEnavant {
+    appearance: none;
+    background-color: #181818;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 15px;
+    min-height: 80px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 400px;
+    will-change: transform;
+  }
+  
+.pizzaright .addPanierEnavant:disabled {
+    pointer-events: none;
+}
+  
+.pizzaright .addPanierEnavant:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.pizzaright .addPanierEnavant:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.h3{
+    font-size: 30px;
+}

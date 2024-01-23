@@ -1,0 +1,817 @@
+@import url("font.css");
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+h1{
+    font-size: 200%;
+    font-family: helsinki;
+    text-align: center;
+
+}
+h2{
+    font-size: 150%;
+}
+h3{
+    font-size: 150%;
+    font-family: helsinki;
+    color: #333;
+    margin-left: 1%;
+}
+label{
+    font-size: 120%;
+}
+ h2,label {
+    font-family: helsinki;
+    color: #333;
+    text-align: center;
+
+}
+
+
+.h3{
+    color: #e4e4e4;
+}
+ 
+
+/*////pop up/////////////////////////////////////////////////////////////////////////////*/
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }  
+  .overlayB,.overlayD {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  .popupimg{
+    text-align: right;
+    width: 93%;
+  }
+
+  .popup img {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+  }
+
+/* bouton styler //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+li a , button , .stockInput{
+ 
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 15px;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 20vw;
+    will-change: transform;
+}
+li {
+    text-align: center;
+}
+
+li a:disabled,button:disabled , .stockInput:disabled{
+    pointer-events: none;
+}
+  
+li a:hover,button:hover,.stockInput:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+
+}
+li .deco{
+ 
+    appearance: none;
+    background-color: rgb(107, 10, 10);
+    border: 3px solid rgb(75, 3, 3);
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 15px;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 20vw;
+    will-change: transform;
+}
+
+li .deco:hover  {
+    color: #fff;
+    background-color: rgb(75, 3, 3);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+li a:active,button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  
+}
+
+.stockInput{
+    text-align: center;
+}
+  
+
+
+
+/* input styler  ////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+ input[type=text], input[type=password], input[type=email] , input[type=checkbox], input[type=number],textarea{
+	width: 20%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	margin-right: 5px;
+	margin: 5px 0 22px 0;
+	border-radius: 10px;
+	display: inline-block;
+	border: none;
+	background: #cecece;
+}
+  
+ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=checkbox]:focus, input[type=number]:focus , textarea:focus {
+	background-color: #bbbbbb;
+	outline: none;
+}
+
+ p {
+	font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.Ingredientsh3{
+    text-align: center;
+
+}
+.description{
+
+    flex-basis: 100%;
+}
+
+/* POUR la page ajouter une pizza //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.newPizzaForm {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 1%;
+}
+.nomPizza{
+    
+    text-align: center;
+    grid-column: 1;
+}
+.prixPizza{
+    
+    text-align: center;
+    grid-column: 1;
+}
+.descriptionPizza{
+    display: flex;
+    text-align: center;
+    margin-top: 2%;
+    grid-column: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.allergenes{
+    margin-right: 1%;
+    grid-column: 1;
+}
+.ingredients{
+    grid-column: 1 / 3;
+    grid-row: 5;
+    margin-right: 1%;
+}
+.enAvant{
+    text-align: center;
+    margin-top: 2%;
+    grid-column: 2;
+    grid-row: 1;
+}
+.imagePizza{
+    text-align: center;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.buttonPizza{
+    grid-column: 1 / 3;
+    grid-row: 7;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.allergeneAdd{
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+
+}
+
+.IngredientsAdd{
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+
+
+}
+#IngredientsAdd{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+}
+#Add{
+    margin:1% ;
+    width: 80%;
+}
+#ajouter{
+    text-align: center;
+}
+
+
+
+
+/*  modify pizza //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.pizza-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.pizza-list h2 {
+    margin: 0;
+}
+
+.pizza-list p {
+    margin: 0;
+}
+
+.modify-btn {
+    background-color: #f4a460;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/*STOCK /////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.Stock{
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 35% 5%;
+}
+.buttonPizza1{
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.buttonPizza2{
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    
+}
+.buttonPizza3{
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    
+}
+.buttonReturn{
+    margin:0%;
+}
+.buttonReturn .deco{
+    margin:0%;
+}
+.IngredientStock,.DessertStock,.BoissonStock{
+    height: 500px;
+    overflow-y: scroll;
+    scrollbar-color: black;
+    scrollbar-width: thin;
+
+    margin: 5%;
+    border: 3px solid rgb(68, 68, 68);
+    border-radius: 13px;
+    text-align: center;
+}
+.zeroQuantity{
+    color: red;
+}
+.lowQuantity{
+    color:orange;
+}
+
+.stockInput{
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    margin: 0px;
+    margin-bottom: 2%;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 400px;
+    will-change: transform;
+}
+
+.DessertStockItem, .BoissonStockItem{
+    border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+}
+
+.expired {
+    color: red;
+    font-weight: bold;
+}
+
+.suppDessertExemplaire,.suppBoissonExemplaire {
+    text-decoration: none;
+    color: #333;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #eee;
+}
+
+.DessertPrix,.BoissonPrix{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.DessertDesc,.BoissonDesc{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*stat //////////////////////////////////////////////////////////////////////////////////////////////*/
+.Stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    border: #1A1A1A;
+    width: 80%;
+    border-radius: 25px;
+}
+
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 60px;
+    background: #fff;
+    
+    border-radius: 25px 25px 0px 0px;
+  }
+   
+  .title {
+    color: #5E6977;
+    font-weight: 500;
+  }
+   
+  .calendar button {
+    font-size: 14px;
+    font-weight: 300;
+    color: #BDC6CF;
+    padding: 6px 14px;
+    border: 2px solid transparent;
+  }
+ 
+  .panel-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    margin: 0;
+    font-family: helsinki;
+    background-color: #ffadad;
+    border-radius: 0px 0px 25px 25px;
+  }
+
+  .element{
+    font-size: 2em;
+  }
+
+  
+.calendar a{
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 15px;
+    min-height: 50px;
+    min-width: 0;
+    outline: none;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 200px;
+    height: 50px;
+    will-change: transform;
+}
+.calendar {
+
+    text-align: center;
+
+}
+
+.calendar a:disabled,button:disabled {
+    pointer-events: none;
+}
+  
+.calendar a:hover,button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.ChiffreA{
+    margin-top: 15%;
+    margin-bottom: 0%;
+}
+
+.ChiffreN{
+    margin-top: 0%;
+}
+
+.wrapper{
+    border-radius:3%;
+}
+.Stat{
+    border-radius:3%;
+}
+
+.DessertStock select{
+    width: 400px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-right: 5px;
+    margin: 5px 0 22px 0;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    background: #cecece;
+}
+
+.BoissonStock select{
+    width: 400px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-right: 5px;
+    margin: 5px 0 22px 0;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    background: #cecece;
+}
+
+
+.IngredientElement{
+    text-align: center;
+}
+
+/* IMAGE PIZZA */
+
+.AdminImagePizza {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    text-align: center;
+}
+
+.AdminImagePizza img{
+    width: 500px;
+}
+
+.AdminImagePizza button {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 10px;
+    
+    min-height: 50px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 200px;
+    will-change: transform;
+}
+
+.AdminImagePizza button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.AdminImagePizza button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+    header {
+    background-color: #333;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+    table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+    th {
+    background-color: #333;
+    color: #fff;
+}
+
+.buttonReturn{
+    position: absolute;
+}
+
+.deco{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: red;
+    width: 50%;
+    color: #fff;
+    padding: 0px; /* Adjust padding for smaller size */
+    border: none;
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size for smaller text */
+}
+
+
+    table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+.buttonReturn{
+    position: absolute;
+}
+
+.DessertDesc{
+    margin-bottom: 2%;
+}
+
+.BoissonDesc{
+    margin-bottom: 2%;
+}
+
+
+/*Style css info dans popup*/
+
+/*Pour un dessert*/
+.newDessert select{
+    width: 400px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-right: 5px;
+    margin: 5px 0 22px 0;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.newDessert input[type="submit"]{
+    appearance: none;
+    background-color: #f1f1f1;
+    border: 2px solid #555555;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    line-height: normal;
+    height: 43px;
+    width: 100px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.newDessert input[type="submit"]:disabled {
+    pointer-events: none;
+}
+
+.newDessert input[type="submit"]:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.newDessert input[type="submit"]:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/*Pour les boissons*/
+.newBoisson select{
+    width: 400px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-right: 5px;
+    margin: 5px 0 22px 0;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.newBoisson input[type="submit"]{
+    appearance: none;
+    background-color: #f1f1f1;
+    border: 2px solid #555555;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    line-height: normal;
+    height: 43px;
+    width: 100px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.newBoisson input[type="submit"]:disabled {
+    pointer-events: none;
+}
+
+.newBoisson input[type="submit"]:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.newBoisson input[type="submit"]:active {
+    box-shadow: none;
+    transform: translateY(0);
+}

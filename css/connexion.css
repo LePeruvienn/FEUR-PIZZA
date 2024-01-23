@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: helsinki;
+    src: url(../font/helsinki.ttf);
+}
+
+@font-face {
+    font-family: KGWhattheTeacherWants;
+    src: url(../font/KGWhattheTeacherWants.ttf);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height:100vh;
+}
+
+
+/* PARTIE GAUCHE */
+
+.contleft {
+    padding-top: 200px;
+    background-color: #181818;
+    color : white;
+    text-align: center;
+}
+
+.contleft img {
+    filter: invert(1);
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.contleft h1 {
+
+    font-family: helsinki;
+    font-size: 100px;
+}
+
+.contleft p {
+    margin-top: -15px;
+    font-family: KGWhattheTeacherWants;
+    font-size: 45px;
+}
+
+/* PARTIE DROITE */
+
+.contright {
+    color : #181818;
+    text-align: center;
+}
+
+.contright h1{
+    font-family: helsinki;
+    font-size: 50px;
+}
+.contright h2{
+    font-family: KGWhattheTeacherWants;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.contright .txtacc2 {
+    margin-top: 30%;
+    margin-bottom: 40px;
+}
+
+.contright .txtacc {
+    margin-top: 7%;
+    margin-bottom: 40px;
+}
+
+.contright button {
+
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 15px;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 300px;
+  will-change: transform;
+}
+
+.contright button:disabled {
+  pointer-events: none;
+}
+
+.contright button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.contright button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.btnacc span{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.contright label {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.contright input[type=text], input[type=password], input[type=email] {
+	width: 70%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	margin-right: 5px;
+	margin: 5px 0 22px 0;
+	border-radius: 10px;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+  
+.contright input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+.contright p {
+	font-family: 'Courier New', Courier, monospace;
+}

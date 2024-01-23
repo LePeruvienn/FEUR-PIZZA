@@ -1,0 +1,518 @@
+.headerpanier {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.headerpanier h1 {
+    font-family: helsinki;
+    font-weight: lighter;
+}
+
+.panierVideContaner{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.panierVideh1{
+    text-align: center;
+    font-size: 100px;
+font-family: helsinki;
+}
+
+.panier {
+
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 75vh;
+}
+
+.panierleft {
+    width: 100%;
+    overflow: scroll;
+}
+
+.panierleft h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.panierright{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+
+.panierleft .element {
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.panierleft .element img{
+    object-fit: cover;
+    padding: 10px;
+    height: 17vh;
+    width: 17vh;
+    filter: drop-shadow(0 0 0.50rem black);
+}
+
+.panierleft .element .ele {
+    display: flex;
+    align-items: center;
+}
+
+.panierleft .element .ele h2{
+    font-size: 35px;
+    font-family: helsinki;
+}
+
+.panierleft .element .ele p{
+    font-size: 35px;
+    font-family: helsinki;
+    margin-left: 10vh;
+}
+
+.panierleft .element .ele label{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.panierleft .element input[type="number"]{
+    width: 60px;
+    text-align: center;
+    font-size: 16px;
+    /*margin-left: -10vh;*/
+}
+
+
+.panierleft .element .ele {
+    
+    margin: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* PANIER RIGHT*/
+
+.panierright {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.panierright .infoElement{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.panierright .infoElement .imgEle img{
+    object-fit: cover;
+    width: 35vh;
+    height: 35vh;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.panierright .infoElement h2{
+    font-size: 45px;
+    font-family: helsinki;
+}
+
+.panierright .infoElement p{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 5vh;
+}
+
+.panierright .infoElement .allergene{
+    padding: 20px;
+    max-height: 70px;
+    overflow: scroll;
+    border: solid 1px black;
+}
+
+.panierright .infoElement .allergene h3{
+    position: absolute;
+    margin-top: -4vh;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 35px;
+    font-family: helsinki;
+}
+
+.panierright .infoElement .allergene ul{
+    margin-top: 1vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.panierright .IngSupp {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+/*Ingredient*/
+
+.panierright .IngredientElement {
+    margin: 20px;
+}
+
+.panierright .IngredientElement h2{
+    position: absolute;
+    margin-top: -3vh;
+    margin-left: 4vh;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 35px;
+    font-family: helsinki;
+}
+
+.panierright .IngredientElement .listIng{
+    height: 200px;
+    border: solid 1px black;
+    overflow: scroll;
+}
+
+
+.IngredientElement .listIng .ing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.IngredientElement .listIng .ing p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+}
+
+
+/*Supplement*/
+
+.panierright .SupplementElement {
+    margin: 20px;
+}
+
+.panierright .SupplementElement h2{
+    position: absolute;
+    margin-top: -3vh;
+    margin-left: 1vh;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 35px;
+    font-family: helsinki;
+}
+
+.panierright .SupplementElement .listSupp{
+    height: 200px;
+    border: solid 1px black;
+    overflow: scroll;
+}
+
+
+.SupplementElement .listSupp .supp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.SupplementElement .listSupp .supp p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+}
+
+.SupplementElement label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.SupplementElement .ajoutSupp {
+    margin-top: 10px;
+}
+
+/*BOUTONS*/
+
+.headerpanier button {
+    appearance: none;
+    background-color: #1A1A1A;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    height: 60px;
+    width: 200px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+  
+.headerpanier button:disabled {
+    pointer-events: none;
+}
+
+.headerpanier button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.headerpanier button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/*BOUTONS SUPP*/
+
+.panierleft .element .ele button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 40px;
+    width: 150px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+  
+.panierleft .element .ele button:disabled {
+    pointer-events: none;
+}
+
+.panierleft .element .ele button:hover {
+    color: #fff;
+    background-color: rgb(82, 7, 7);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.panierleft .element .ele button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+/*BOUTON ING*/
+
+.IngredientElement .listIng .ing button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 30px;
+    width: 120px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+  
+.IngredientElement .listIng .ing button:disabled {
+    pointer-events: none;
+}
+
+.IngredientElement .listIng .ing button:hover {
+    color: #fff;
+    background-color: rgb(82, 7, 7);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.IngredientElement .listIng .ing button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/*BOUTON SUPP*/
+
+.IngredientElement .listIng .ing button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 30px;
+    width: 120px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+  
+.IngredientElement .listIng .ing button:disabled {
+    pointer-events: none;
+}
+
+.IngredientElement .listIng .ing button:hover {
+    color: #fff;
+    background-color: rgb(82, 7, 7);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.IngredientElement .listIng .ing button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* SUPPRIMER SUPP */
+
+.SupplementElement .supp button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 30px;
+    width: 120px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+  
+.SupplementElement .supp button:disabled {
+    pointer-events: none;
+}
+
+.SupplementElement .supp button:hover {
+    color: #fff;
+    background-color: rgb(82, 7, 7);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.SupplementElement .ajoutSupp button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* AJOUTER SUPP */
+
+.SupplementElement .ajoutSupp button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 30px;
+    width: 120px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+  
+.SupplementElement .ajoutSupp button:disabled {
+    pointer-events: none;
+}
+
+.SupplementElement .ajoutSupp button:hover {
+    color: #fff;
+    background-color: rgb(42, 189, 42);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.SupplementElement .ajoutSupp button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}

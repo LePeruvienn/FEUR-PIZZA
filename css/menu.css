@@ -1,0 +1,490 @@
+@import url("font.css");
+
+@import url("article.css");
+@import url("pizza.css");
+@import url("footer.css");
+@import url("connexion.css");
+@import url("compte.css");
+@import url("panier.css");
+@import url("payer.css");
+@import url("apresPayer.css");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.MaPizza h1{
+    text-align: center;
+    font-family: helsinki;
+    margin: 30px;
+}
+
+.desc{
+    margin: 30px;
+    margin-right: 120px;
+    margin-left: 60px;
+}
+
+
+.bar {
+    width: 100%;
+    height: 100px;
+    background-color: #181818;
+    color : white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar .logobar {
+
+    margin-left: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-family: helsinki;
+}
+
+.bar .logobar img {
+    width: 50px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.btnbar {
+    display: flex;
+}
+
+.bar .btnbar a{
+
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.bar .btnbar a {
+
+    color :white;
+    text-decoration: none;
+    font-family: KGWhattheTeacherWants;
+    font-size: 25px;
+    height: 100%;
+}
+
+.bar .btnbar img {
+    width: 40px;
+    filter: invert(1);
+    margin-right: 5px;
+}
+
+.CompteHiddenBox {
+    position: absolute;
+    padding-top: 5px;
+    margin-left: -1vh;
+    background-color: #181818;
+    font-weight: bold;
+
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    border-bottom: solid 1px white;
+
+    display: none;
+}
+
+.CompteHiddenBox a{
+    margin: 0 !important;
+}
+
+
+.CompteHiddenBox ul {
+    list-style-type: none;
+}
+
+.CompteHiddenBox ul li a{
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 20px !important;
+}
+
+.CompteHiddenBox ul li a:hover{
+    text-decoration: underline;
+}
+
+.compte:hover .CompteHiddenBox {
+    display: block;
+  }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: -5%;
+}
+
+nav div a {
+
+    display: inline-block;
+    position: relative;
+
+    margin-left: 90px;
+    margin-right: 90px;
+
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+ 
+nav div a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+ 
+nav div a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+/*////pop up/////////////////////////////////////////////////////////////////////////////*/
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }  
+  .overlayB,.overlayD {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .popup {
+    background: #fff;
+    padding: 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  .popupimg{
+    text-align: right;
+    width: 93%;
+  }
+
+  .popup img {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+  }
+/*///////////////////////*/
+
+/* bouton styler //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+li a , button , .stockInput{
+ 
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 15px;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    z-index: 10;
+}
+
+li a:disabled,button:disabled , .stockInput:disabled{
+    pointer-events: none;
+}
+  
+li a:hover,button:hover,.stockInput:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+
+}
+li .deco{
+ 
+    appearance: none;
+    background-color: rgb(107, 10, 10);
+    border: 3px solid rgb(75, 3, 3);
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 15px;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 20vw;
+    will-change: transform;
+}
+
+li .deco:hover  {
+    color: #fff;
+    background-color: rgb(75, 3, 3);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+li a:active,button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  
+}
+
+.stockInput{
+    text-align: center;
+}
+
+/*///////////////////////*/
+
+/*Bouton supprimer de la liste d'adresse*/
+.adresse input[type="submit"] {
+    appearance: none;
+    background-color: #a30000;
+    border: 1px solid #1A1A1A;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    line-height: normal;
+    height: 30px;
+    width: 70px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.adresse input[type="submit"]:disabled {
+    pointer-events: none;
+}
+
+.adresse input[type="submit"]:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.adresse input[type="submit"]:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/*bouton supprimer de la liste de carte bancaire*/
+.carte input[type="submit"] {
+    appearance: none;
+    background-color: #a30000;
+    border: 1px solid #1A1A1A;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    line-height: normal;
+    height: 30px;
+    width: 70px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.carte input[type="submit"]:disabled {
+    pointer-events: none;
+}
+
+.carte input[type="submit"]:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.carte input[type="submit"]:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/*css du PopUp d'une nouvelle carte bancaire*/
+.paiement input[type="text"], input[type="num"]{
+    width: 400px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-right: 5px;
+    margin: 5px 0 22px 0;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.paiement input[type="number"]{
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-right: 5px;
+    margin: 5px 0 22px 0;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.paiement input[type="submit"]{
+    appearance: none;
+    background-color: #ffffff;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    line-height: normal;
+    height: 30px;
+    width: 70px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.paiement input[type="submit"]:disabled {
+    pointer-events: none;
+}
+
+.paiement input[type="submit"]:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.paiement input[type="submit"]:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/*css de la PopUp d'une nouvelle adresse*/
+.adressePOP input[type="text"], input[type="number"]{
+    width: 400px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-right: 5px;
+    margin: 5px 0 22px 0;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.adressePOP input[type="submit"]{
+    appearance: none;
+    background-color: #ffffff;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    line-height: normal;
+    height: 30px;
+    width: 70px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.adressePOP input[type="submit"]:disabled {
+    pointer-events: none;
+}
+
+.adressePOP input[type="submit"]:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.adressePOP input[type="submit"]:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.popup h3{
+    font-family: helsinki;
+    font-weight: lighter;
+}

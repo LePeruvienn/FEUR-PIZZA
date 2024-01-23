@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+    <html>
+     <head>
+          <title>FEUR PIZZA : Acceuil</title>
+          <meta charset="UTF-8">
+          <link rel="icon" href="img/pizza.png">
+          <link rel="stylesheet" href="../css/menu.css">
+          <link rel="stylesheet" href="../css/panier.css">
+     </head>
+    <body>
+        
+        <!-- MENU -->
+
+        <div class="bar">
+            <div class="logobar">
+            <img src="../img/pizza.png">
+            <h1>FEUR PIZZA</h1>
+            </div>
+            
+  
+            <nav>
+            <div><a href="./index.php?objet=Pizza">Pizzas</a></div>
+            <div><a href="./index.php?objet=Boisson">Boissons</a></div>
+            <div><a href="./index.php?objet=Dessert">Desserts</a></div>
+            </nav>
+  
+            <div class="btnbar">
+            <div class="compte">
+                 <a href="#"><img src="../img/compte.png">Login</a>
+                 <div class="CompteHiddenBox">
+                      <ul>
+                           <li><a href="index.php?objet=Compte&action=displayCompte">Mon Compte </a></li>
+                           <li><a href="index.php?objet=Compte&action=disconnect"> Déconnexion </a></li>
+                      </ul>
+                 </div>
+            </div>
+  
+            <div class="panier">
+                 <a href="#"><img src="../img/panier.png">Panier  0.00 €</a>
+            </div>
+            </div>
+       </div>
+
+
+       <!-- PANIER -->
+
+       <div class="headerpanier">
+            <h1>PANIER</h1>
+            <h1>TOTAL : 9.99 €</h1>
+            <button>PAYER</button>
+       </div>
+
+       <div class="panier">
+            <div class="panierleft">
+                <div class="element">
+                    <div>
+                        <img src="../img/Pizza/Feuroni.png">
+                    </div>
+
+                    <div>
+                        <div class="ele">
+                            <h2>Nom Pizza</h2>
+                            <p>99€</p>
+                        </div>
+                        <div class="ele">
+                            <label for="quantite">Quantité</label>
+                            <input name="quantite" type="number">
+                            <button>Supprimer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panierright">
+                <div class="infoElement">
+                    <div class="imgEle">
+                        <img src="../img/Pizza/Feuroni.png">
+                    </div>
+                    <div class="info">
+                        <div class="desc">
+                            <h2>Description</h2>
+                            <p>Lorem ipsum dolor sit amet.consectutor adipiscing elit, sed do eisumod tempor icidindunt ut labore el dolore magna aliqua.</p>
+                        </div>
+
+                        <div class="allergene">
+                            <h3>Allergene</h3>
+
+                            <div class="allergenelist">
+                                <ul>
+                                    <li>Allergene 1 : Nom Allergene</li>
+                                    <li>Allergene 2 : Nom Allergene</li>
+                                    <li>Allergene 3 : Nom Allergene</li>
+    
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="IngSupp">
+                    <div class="IngredientElement">
+                        <h2>Ingredients</h2>
+                        <div>
+                            <div class="listIng">
+                                <div class="ing">
+                                    <p>Nom Ingrédient</p>
+                                    <p>Quantité : 100 g</p>
+                                    <button>Supprimer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="SupplementElement">
+                        <h2>SUPPLEMENT</h2>
+                        <div>
+                            <div class="listSupp">
+                                <div class="supp">
+                                    <p>Supplement +1.99 €</p>
+                                    <button>Supprimer</button>
+                                </div>
+                            </div>
+                            <div class="ajoutSupp">
+                                <label for="suppSelect">Supplément </label>
+                                <select name="suppSelect">
+                                    <option value="Emmental">Emmental</option>
+                                    <option value="Champignon">Champignon</option>
+                                    <option value="Cheddar">Cheddar</option>
+                                    <option value="Gouda">Gouda</option>
+                                </select>
+
+                                <button>Ajouter +</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 

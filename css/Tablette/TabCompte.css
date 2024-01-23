@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: helsinki;
+    src: url(../font/helsinki.ttf);
+}
+
+@font-face {
+    font-family: KGWhattheTeacherWants;
+    src: url(../font/KGWhattheTeacherWants.ttf);
+}
+
+
+.moncompte {
+    margin-top: 50px;
+    margin: 20px;
+}
+
+.comptegrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.moncompte h1 {
+    font-family: helsinki;
+    margin-bottom: 20px;
+}
+
+.compteleft {
+    margin-left: 70px;
+}
+
+.pp {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.pp img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.moncompte .infos div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.moncompte .infos h2 {
+    margin-right: 20px;
+    font-family: helsinki;
+}
+
+.moncompte .infos p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+.moncompte .infos button {
+    width: 200px;
+}
+
+.moncompte .infos input[type=text] {
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-right: 5px;
+    margin: 5px 0 22px 0;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.moncompte .infos button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 15px;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 300px;
+    will-change: transform;
+  }
+  
+.moncompte .infos button:disabled {
+    pointer-events: none;
+}
+
+.moncompte .infos button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.moncompte .infos button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/*PARTIE DE DROITE*/
+
+.compteright {
+    display: grid;
+    grid-auto-rows: 50% 50%;
+    margin-top: -10px;
+}
+
+/* ADRESSES*/
+
+.compteright .adresses {
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.compteright .adresses h2{
+
+    margin: 10px;
+    font-size: 30px;
+    font-family: helsinki;
+}
+
+.compteright .adresses p{
+
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.compteright .adresses .adresse {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    margin: 7px;
+    
+    margin-bottom: 15px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.adresses .listeadr {
+    height: 250px;
+    overflow: scroll;
+}
+
+/* CARTE DE CERDIT*/
+
+.compteright .cartedecredit {
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.compteright .cartedecredit h2{
+
+    margin: 10px;
+    font-size: 30px;
+    font-family: helsinki;
+}
+
+.compteright .cartedecredit p{
+
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.compteright .cartedecredit .carte {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    margin: 7px;
+    
+    margin-bottom: 15px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cartedecredit .listcarte {
+    height: 250px;
+    overflow: scroll;
+}
+
+/*BOUTONS ADRESSES*/
+
+.compteright .adresses .adresse button {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 5px;
+    min-height: 50px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 150px;
+    will-change: transform;
+}
+  
+.compteright .adresses .adresse button:disabled {
+    pointer-events: none;
+}
+
+.compteright .adresses .adresse button[name="modif"]:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.compteright .adresses .adresse button[name="supp"]:hover {
+    color: #fff;
+    background-color: rgb(82, 7, 7);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.compteright .adresses .adresse button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* BOUTONS CARTE CREDIT*/
+
+.compteright .cartedecredit .carte button {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 5px;
+    min-height: 50px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 200px;
+    will-change: transform;
+}
+  
+.compteright .cartedecredit .carte button:disabled {
+    pointer-events: none;
+}
+
+.compteright .cartedecredit .carte button:hover {
+    color: #fff;
+    background-color: rgb(82, 7, 7);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.compteright .cartedecredit .carte button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}

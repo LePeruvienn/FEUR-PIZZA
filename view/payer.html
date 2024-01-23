@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>FEUR PIZZA : Payer</title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="img/pizza.png">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/payer.css">
+</head>
+
+<body>
+    
+        <!-- MENU -->
+
+        <div class="bar">
+          <div class="logobar">
+          <img src="../img/pizza.png">
+          <h1>FEUR PIZZA</h1>
+          </div>
+          
+
+          <nav>
+          <div><a href="./index.php?objet=Pizza">Pizzas</a></div>
+          <div><a href="./index.php?objet=Boisson">Boissons</a></div>
+          <div><a href="./index.php?objet=Dessert">Desserts</a></div>
+          </nav>
+
+          <div class="btnbar">
+          <div class="compte">
+               <a href="#"><img src="../img/compte.png">Login</a>
+               <div class="CompteHiddenBox">
+                    <ul>
+                         <li><a href="index.php?objet=Compte&action=displayCompte">Mon Compte </a></li>
+                         <li><a href="index.php?objet=Compte&action=disconnect"> Déconnexion </a></li>
+                    </ul>
+               </div>
+          </div>
+
+          <div class="panier">
+               <a href="#"><img src="../img/panier.png">Panier  0.00 €</a>
+          </div>
+          </div>
+     </div>
+
+  <div class="choix-adresse">
+    <label for="choix_adresse">Choisissez une adresse</label>
+    <select name ="adresse" id="choix_adresse">
+      <option value="">--Choisir une adresse--</option>
+      <option value="3 rue de l'hamster">3 rue de l'hamster</option>
+    </select>
+  </div>
+
+  <div class="reduction">
+    <label for="reduction">Bon de réduction</label><br>
+    <input type="text" id="reduction" name="reduction" placeholder="bon de reduction" required><br>
+    <label for ="reduction">Réduction total : XX €</label>
+  </div>
+  
+  <br><br><br><br>
+
+  <div class="paiement">
+    <form action="/process_payment" method="post">
+      <label for="cardholder_name">Nom du Titulaire:</label><br>
+      <input type="text" id="cardholder_name" name="cardholder_name" placeholder="Nom" required><br>
+
+      <label for="card_number">Numéro de Carte:</label><br>
+      <input type="text" id="card_number" name="card_number" placeholder="Numéro" required><br>
+      
+      <label for="expiry_date">Date d'Expiration:</label><br>
+      <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YY" required>
+      
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" placeholder="CVV" required><br>
+    </form>
+  </div>
+
+   <div class="payer">
+    <label for="Total">Total : 99 €</label><br>
+    <button>Payer</button>
+  </div>
+
+</body>
+</html>

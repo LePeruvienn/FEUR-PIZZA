@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html>
+     <head>
+          <title>FEUR PIZZA : Acceuil</title>
+          <meta charset="UTF-8">
+          <link rel="icon" href="../../img/pizza.png">
+          <link rel="stylesheet" href="../../css/menu.css">
+          <link rel="stylesheet" href="../../css/compte.css">
+     </head>
+    <body>
+
+        <!-- MENU -->
+
+        <div class="bar">
+            <div class="logobar">
+                <img src="../../img/pizza.png">
+                <h1>FEUR PIZZA</h1>
+            </div>
+            
+    
+            <nav>
+                <div><a href="./index.php?objet=Pizza">Pizzas</a></div>
+                <div><a href="./index.php?objet=Boisson">Boissons</a></div>
+                <div><a href="./index.php?objet=Dessert">Desserts</a></div>
+            </nav>
+    
+            <div class="btnbar">
+                <div class="compte">
+                    <a href="#"><img src="../../img/compte.png">koto91</a>
+                    <div class="CompteHiddenBox">
+                        <ul>
+                            <li><a href="#">Mon Compte </a></li>
+                            <li><a href="index.php?objet=Compte&action=disconnect"> Déconnexion </a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="panier">
+                    <a href="#"><img src="../../img/panier.png">Panier  0.00 €</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MON COMPTE  -->
+
+        <div class="moncompte">
+
+            <h1>Mon Compte :</h1>
+
+            <form>
+
+                <div class="pp">
+                    <img src="../../img/compte.png">
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"/>
+                </div>
+
+                <div class="infos">
+
+                    <div class="login">
+                        <h2>Login :</h2> <input type="text" value="koto91">
+                    </div>
+            
+                    <div class="nom">
+                        <h2>Nom :</h2> <input type="text" value="PINEL">
+                    </div>
+            
+                    <div class="prenom">
+                        <h2>Prenom :</h2> <input type="text" value="Arthur">
+                    </div>
+            
+                    <div class="email">
+                        <h2>E-mail :</h2> <input type="text" value="koto91@free.fr">
+                    </div>
+            
+                    <div class="tel">
+                        <h2>Telephone :</h2> <input type="text" value="07 69 22 42 56">
+                    </div>
+    
+                    <button type="submit">Sauvegarder</button>
+                </div>
+            </form>
+
+        </div>
+
+    </body>
+</html> 
